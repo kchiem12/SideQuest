@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class Login: UIViewController {
+class LoginViewController: UIViewController {
     
     // Initializing variables for the login screen
     let logoImageView: UIImageView = UIImageView()
@@ -21,7 +21,7 @@ class Login: UIViewController {
     let signupLabel: UILabel = UILabel()
     let gradient: CAGradientLayer = CAGradientLayer()
     
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

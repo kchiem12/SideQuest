@@ -10,12 +10,13 @@
 		37BFECCA60C923C4A85BB520 /* Pods_SideQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390B796AE070ED492B0E39B /* Pods_SideQuest.framework */; };
 		BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1047562929F31900CA3CAE /* AppDelegate.swift */; };
 		BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1047582929F31900CA3CAE /* SceneDelegate.swift */; };
-		BE10475B2929F31900CA3CAE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10475A2929F31900CA3CAE /* Login.swift */; };
+		BE10475B2929F31900CA3CAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10475A2929F31900CA3CAE /* LoginViewController.swift */; };
 		BE1047602929F31B00CA3CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE10475F2929F31B00CA3CAE /* Assets.xcassets */; };
 		BE1047632929F31B00CA3CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1047612929F31B00CA3CAE /* LaunchScreen.storyboard */; };
 		BE10476B292C19C200CA3CAE /* UIColor+RGBHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */; };
 		BEAEAA1E292C3D7E00FDD98F /* UITextField+TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */; };
 		BEAEAA20292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */; };
+		BEDC0540292E09E6001E76F7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +26,14 @@
 		BE1047532929F31900CA3CAE /* SideQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1047562929F31900CA3CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1047582929F31900CA3CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE10475A2929F31900CA3CAE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BE10475A2929F31900CA3CAE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE10475F2929F31B00CA3CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1047622929F31B00CA3CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE1047642929F31B00CA3CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBHex.swift"; sourceTree = "<group>"; };
 		BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TapGesture.swift"; sourceTree = "<group>"; };
 		BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddGestureViewController.swift"; sourceTree = "<group>"; };
+		BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,8 @@
 			children = (
 				BE1047562929F31900CA3CAE /* AppDelegate.swift */,
 				BE1047582929F31900CA3CAE /* SceneDelegate.swift */,
-				BE10475A2929F31900CA3CAE /* Login.swift */,
+				BE10475A2929F31900CA3CAE /* LoginViewController.swift */,
+				BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */,
 				BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */,
 				BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */,
 				BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */,
@@ -211,7 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE10475B2929F31900CA3CAE /* Login.swift in Sources */,
+				BE10475B2929F31900CA3CAE /* LoginViewController.swift in Sources */,
+				BEDC0540292E09E6001E76F7 /* SignUpViewController.swift in Sources */,
 				BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */,
 				BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */,
 				BEAEAA1E292C3D7E00FDD98F /* UITextField+TapGesture.swift in Sources */,
