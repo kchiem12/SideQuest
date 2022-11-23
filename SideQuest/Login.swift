@@ -19,16 +19,24 @@ class Login: UIViewController {
     let passwordTextField: TextField = TextField()
     let forgetPasswordLabel: UILabel = UILabel()
     let signupLabel: UILabel = UILabel()
+    let gradient: CAGradientLayer = CAGradientLayer()
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(rgb: 0xE0F6F7)
+        
+        // add gradient background
+        gradient.frame = self.view.bounds
+        gradient.colors = [
+            UIColor(rgb: 0xD8DFF2).cgColor, UIColor(rgb: 0xE1F8F8).cgColor
+        ]
+        gradient.startPoint = CGPoint.zero
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        self.view.layer.insertSublayer(gradient, at: 0)
         
         // De-select textfield
         self.hideKeyboardWhenTappedAround()
-        
         logoImageView.image = UIImage(named: "placeholder")
         logoImageView.contentMode = .scaleAspectFit
         logoImageView.clipsToBounds = true
@@ -37,6 +45,7 @@ class Login: UIViewController {
         userLabel.text = "email"
         userLabel.textColor = UIColor(rgb: 0x7D91C5)
         userLabel.font = .systemFont(ofSize: 16)
+        userLabel.backgroundColor = .clear
         view.addSubview(userLabel)
         
         userTextField.layer.cornerRadius = 8
@@ -47,6 +56,7 @@ class Login: UIViewController {
         passwordLabel.text = "password"
         passwordLabel.textColor = UIColor(rgb: 0x7D91C5)
         passwordLabel.font = .systemFont(ofSize: 16)
+        passwordLabel.backgroundColor = .clear
         view.addSubview(passwordLabel)
         
         passwordTextField.layer.cornerRadius = 8
@@ -57,6 +67,7 @@ class Login: UIViewController {
         forgetPasswordLabel.text = "forgot your password?"
         forgetPasswordLabel.font = .systemFont(ofSize: 12)
         forgetPasswordLabel.textColor = UIColor(rgb: 0x6EBABA)
+        forgetPasswordLabel.backgroundColor = .clear
         view.addSubview(forgetPasswordLabel)
         
         loginButton.setTitle("login", for: .normal)
@@ -69,6 +80,7 @@ class Login: UIViewController {
         signupLabel.text = "don't have an account? sign up here!"
         signupLabel.font = .systemFont(ofSize: 12)
         signupLabel.textColor = UIColor(rgb: 0x6EBABA)
+        signupLabel.backgroundColor = .clear
         view.addSubview(signupLabel)
         
         setupConstraints()
