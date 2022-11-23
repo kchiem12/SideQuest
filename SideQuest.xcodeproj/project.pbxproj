@@ -17,6 +17,7 @@
 		BEAEAA1E292C3D7E00FDD98F /* UITextField+TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */; };
 		BEAEAA20292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */; };
 		BEDC0540292E09E6001E76F7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */; };
+		BEDC0542292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC0541292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TapGesture.swift"; sourceTree = "<group>"; };
 		BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddGestureViewController.swift"; sourceTree = "<group>"; };
 		BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BEDC0541292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+didTapAttributedText.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				BE1047562929F31900CA3CAE /* AppDelegate.swift */,
 				BE1047582929F31900CA3CAE /* SceneDelegate.swift */,
 				BE10475A2929F31900CA3CAE /* LoginViewController.swift */,
+				BEDC0541292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift */,
 				BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */,
 				BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */,
 				BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */,
@@ -218,6 +221,7 @@
 				BEDC0540292E09E6001E76F7 /* SignUpViewController.swift in Sources */,
 				BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */,
 				BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */,
+				BEDC0542292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift in Sources */,
 				BEAEAA1E292C3D7E00FDD98F /* UITextField+TapGesture.swift in Sources */,
 				BE10476B292C19C200CA3CAE /* UIColor+RGBHex.swift in Sources */,
 				BEAEAA20292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift in Sources */,

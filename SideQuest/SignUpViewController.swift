@@ -23,7 +23,8 @@ class SignUpViewController: UIViewController {
     let lastNameTextField: TextField = TextField()
     let phoneNumberTextField: TextField = TextField()
     let createButton: UIButton = UIButton()
-    let createLabel: UILabel = UILabel()
+    let profileImageView: UIImageView = UIImageView()
+    let addProfileLabel: UILabel = UILabel()
     
 
     override func viewDidLoad() {
@@ -46,11 +47,17 @@ class SignUpViewController: UIViewController {
         whiteBackgroundView.layer.zPosition = 0 // set the uiview to back of z-index
         view.addSubview(whiteBackgroundView)
         
-        createLabel.text = "Create an account"
-        createLabel.textColor = UIColor(rgb: 0x408585)
-        createLabel.backgroundColor = .clear
-        createLabel.font = .systemFont(ofSize: 32)
-        view.addSubview(createLabel)
+        profileImageView.image = UIImage(named: "profile_placeholder")
+        profileImageView.contentMode = .scaleAspectFit
+        profileImageView.clipsToBounds = true
+        view.addSubview(profileImageView)
+        
+        addProfileLabel.text = "add profile picture"
+        addProfileLabel.font = .systemFont(ofSize: 12)
+        addProfileLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeImage(gesture:))))
+        addProfileLabel.textColor = UIColor(rgb: 0x7D91C5)
+        addProfileLabel.isUserInteractionEnabled = true
+        view.addSubview(addProfileLabel)
         
         emailLabel.text = "email"
         emailLabel.textColor = UIColor(rgb: 0x6EBABA)
@@ -112,6 +119,10 @@ class SignUpViewController: UIViewController {
         
     }
     
+    @objc func changeImage(gesture: UITapGestureRecognizer) {
+        
+    }
+    
     func setupConstraints() {
         whiteBackgroundView.snp.makeConstraints { make in
             make.centerX.equalTo(self.view.safeAreaLayoutGuide.snp.centerX)
@@ -120,13 +131,20 @@ class SignUpViewController: UIViewController {
             make.width.equalTo(326)
         }
         
-        createLabel.snp.makeConstraints { make in
-            make.top.equalTo(whiteBackgroundView.snp.top).offset(10)
-            make.centerX.equalTo(self.view.safeAreaLayoutGuide.snp.centerX)
+        profileImageView.snp.makeConstraints { make in
+            make.top.equalTo(self.view.snp.top).offset(74)
+            make.centerX.equalTo(view.safeAreaLayoutGuide.snp.centerX)
+            make.width.equalTo(130)
+            make.height.equalTo(130)
+        }
+        
+        addProfileLabel.snp.makeConstraints { make in
+            make.top.equalTo(profileImageView.snp.bottom).offset(2)
+            make.centerX.equalTo(view.safeAreaLayoutGuide.snp.centerX)
         }
         
         emailLabel.snp.makeConstraints { make in
-            make.top.equalTo(createLabel.snp.bottom).offset(15)
+            make.top.equalTo(profileImageView.snp.bottom).offset(22)
             make.left.equalTo(emailTextField.snp.left)
         }
         

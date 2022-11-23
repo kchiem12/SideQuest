@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     let forgetPasswordLabel: UILabel = UILabel()
     let signupLabel: UILabel = UILabel()
     let gradient: CAGradientLayer = CAGradientLayer()
+    let signText = "don't have an account? sign up here!"
     
 
 
@@ -77,13 +78,33 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = 8
         view.addSubview(loginButton)
         
-        signupLabel.text = "don't have an account? sign up here!"
+        signupLabel.text = signText
         signupLabel.font = .systemFont(ofSize: 12)
+        signupLabel.isUserInteractionEnabled = true
+        let attributedSignText = NSMutableAttributedString(string: signText)
+        signupLabel.attributedText = attributedSignText
+        signupLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapLabel(gesture:))))
         signupLabel.textColor = UIColor(rgb: 0x6EBABA)
-        signupLabel.backgroundColor = .clear
         view.addSubview(signupLabel)
         
         setupConstraints()
+    }
+    
+    @objc func tapLabel(gesture: UITapGestureRecognizer) {
+        // sets the range of clickable text
+        let signupRange = (signText as NSString).range(of: "sign up here!")
+                
+        if gesture.didTapAttributedTextInLabel(label: signupLabel, inRange: signupRange) {
+            print("it worked!")
+            // Changes the rootviewcontroller
+            UIApplication
+                .shared
+                .connectedScenes
+                .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+                .first?.rootViewController = SignUpViewController()
+        } else {
+            print("none")
+        }
     }
     
     func setupConstraints() {
