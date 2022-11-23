@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     let gradient: CAGradientLayer = CAGradientLayer()
     let whiteBackgroundView: UIView = UIView()
@@ -25,6 +25,7 @@ class SignUpViewController: UIViewController {
     let createButton: UIButton = UIButton()
     let profileImageView: UIImageView = UIImageView()
     let addProfileLabel: UILabel = UILabel()
+    let imagePicker: UIImagePickerController = UIImagePickerController()
     
 
     override func viewDidLoad() {
@@ -48,8 +49,9 @@ class SignUpViewController: UIViewController {
         view.addSubview(whiteBackgroundView)
         
         profileImageView.image = UIImage(named: "profile_placeholder")
-        profileImageView.contentMode = .scaleAspectFit
+        profileImageView.contentMode = .scaleAspectFill
         profileImageView.clipsToBounds = true
+        profileImageView.layer.cornerRadius = 65
         view.addSubview(profileImageView)
         
         addProfileLabel.text = "add profile picture"
@@ -120,7 +122,21 @@ class SignUpViewController: UIViewController {
     }
     
     @objc func changeImage(gesture: UITapGestureRecognizer) {
-        
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
+            imagePicker.delegate = self
+            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.allowsEditing = true
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    // When the user finish picking an image for their profile
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        guard let image = info[.originalImage] as? UIImage else {
+            fatalError("Expected dictionary of image, but got \(info)")
+        }
+        profileImageView.image = image
     }
     
     func setupConstraints() {
