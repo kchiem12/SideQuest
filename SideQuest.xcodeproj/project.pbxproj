@@ -13,6 +13,9 @@
 		BE10475B2929F31900CA3CAE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10475A2929F31900CA3CAE /* Login.swift */; };
 		BE1047602929F31B00CA3CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE10475F2929F31B00CA3CAE /* Assets.xcassets */; };
 		BE1047632929F31B00CA3CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1047612929F31B00CA3CAE /* LaunchScreen.storyboard */; };
+		BE10476B292C19C200CA3CAE /* UIColor+RGBHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */; };
+		BEAEAA1E292C3D7E00FDD98F /* UITextField+TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */; };
+		BEAEAA20292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		BE10475F2929F31B00CA3CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1047622929F31B00CA3CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE1047642929F31B00CA3CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBHex.swift"; sourceTree = "<group>"; };
+		BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TapGesture.swift"; sourceTree = "<group>"; };
+		BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddGestureViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				BE1047562929F31900CA3CAE /* AppDelegate.swift */,
 				BE1047582929F31900CA3CAE /* SceneDelegate.swift */,
 				BE10475A2929F31900CA3CAE /* Login.swift */,
+				BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */,
+				BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */,
+				BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */,
 				BE10475F2929F31B00CA3CAE /* Assets.xcassets */,
 				BE1047612929F31B00CA3CAE /* LaunchScreen.storyboard */,
 				BE1047642929F31B00CA3CAE /* Info.plist */,
@@ -85,7 +94,6 @@
 				90794C4EE4471169CA4AF22A /* Pods-SideQuest.debug.xcconfig */,
 				435164705434DF2FB6421D38 /* Pods-SideQuest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +214,9 @@
 				BE10475B2929F31900CA3CAE /* Login.swift in Sources */,
 				BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */,
 				BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */,
+				BEAEAA1E292C3D7E00FDD98F /* UITextField+TapGesture.swift in Sources */,
+				BE10476B292C19C200CA3CAE /* UIColor+RGBHex.swift in Sources */,
+				BEAEAA20292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
