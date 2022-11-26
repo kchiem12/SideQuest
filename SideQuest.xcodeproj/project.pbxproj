@@ -82,16 +82,24 @@
 				BE1047562929F31900CA3CAE /* AppDelegate.swift */,
 				BE1047582929F31900CA3CAE /* SceneDelegate.swift */,
 				BE10475A2929F31900CA3CAE /* LoginViewController.swift */,
-				BEDC0541292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift */,
 				BEDC053F292E09E6001E76F7 /* SignUpViewController.swift */,
-				BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */,
-				BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */,
-				BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */,
+				BE9F7CD22931AD4600561E8F /* extensions */,
 				BE10475F2929F31B00CA3CAE /* Assets.xcassets */,
 				BE1047612929F31B00CA3CAE /* LaunchScreen.storyboard */,
 				BE1047642929F31B00CA3CAE /* Info.plist */,
 			);
 			path = SideQuest;
+			sourceTree = "<group>";
+		};
+		BE9F7CD22931AD4600561E8F /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC0541292EC787001E76F7 /* UITapGestureRecognizer+didTapAttributedText.swift */,
+				BEAEAA1F292C3F8400FDD98F /* UIViewController+AddGestureViewController.swift */,
+				BEAEAA1D292C3D7E00FDD98F /* UITextField+TapGesture.swift */,
+				BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		F9C3E90677D1D605B14D5CDD /* Pods */ = {

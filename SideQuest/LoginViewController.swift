@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     let signupLabel: UILabel = UILabel()
     let gradient: CAGradientLayer = CAGradientLayer()
     let signText = "don't have an account? sign up here!"
+    let backBarButton: UIBarButtonItem = UIBarButtonItem(title: "Login", style: .bordered, target: nil, action: nil)
     
 
 
@@ -35,6 +36,8 @@ class LoginViewController: UIViewController {
         gradient.startPoint = CGPoint.zero
         gradient.endPoint = CGPoint(x: 1, y: 1)
         self.view.layer.insertSublayer(gradient, at: 0)
+        
+        navigationItem.backBarButtonItem = backBarButton
         
         // De-select textfield
         self.hideKeyboardWhenTappedAround()
@@ -97,11 +100,14 @@ class LoginViewController: UIViewController {
         if gesture.didTapAttributedTextInLabel(label: signupLabel, inRange: signupRange) {
             print("it worked!")
             // Changes the rootviewcontroller
-            UIApplication
-                .shared
-                .connectedScenes
-                .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-                .first?.rootViewController = SignUpViewController()
+            
+//            UIApplication
+//                .shared
+//                .connectedScenes
+//                .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+//                .first?.rootViewController = SignUpViewController()
+            navigationController?.pushViewController(SignUpViewController(), animated: true)
+            
         } else {
             print("none")
         }

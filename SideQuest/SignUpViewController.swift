@@ -41,6 +41,8 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate & 
         gradient.endPoint = CGPoint(x: 1, y: 1)
         self.view.layer.insertSublayer(gradient, at: 0)
         
+        // hides the back button on the navigationitem
+        
         self.hideKeyboardWhenTappedAround()
         
         whiteBackgroundView.backgroundColor = .white
