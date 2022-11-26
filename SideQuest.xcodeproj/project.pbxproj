@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37BFECCA60C923C4A85BB520 /* Pods_SideQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390B796AE070ED492B0E39B /* Pods_SideQuest.framework */; };
 		BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1047562929F31900CA3CAE /* AppDelegate.swift */; };
 		BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1047582929F31900CA3CAE /* SceneDelegate.swift */; };
 		BE10475B2929F31900CA3CAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10475A2929F31900CA3CAE /* LoginViewController.swift */; };
@@ -21,10 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2390B796AE070ED492B0E39B /* Pods_SideQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SideQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		435164705434DF2FB6421D38 /* Pods-SideQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideQuest.release.xcconfig"; path = "Target Support Files/Pods-SideQuest/Pods-SideQuest.release.xcconfig"; sourceTree = "<group>"; };
-		90794C4EE4471169CA4AF22A /* Pods-SideQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideQuest.debug.xcconfig"; path = "Target Support Files/Pods-SideQuest/Pods-SideQuest.debug.xcconfig"; sourceTree = "<group>"; };
-		BE1047532929F31900CA3CAE /* SideQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1047532929F31900CA3CAE /* SideQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SideQuest.app; path = "/Users/kenchiem/SideQuest/build/Debug-iphoneos/SideQuest.app"; sourceTree = "<absolute>"; };
 		BE1047562929F31900CA3CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1047582929F31900CA3CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BE10475A2929F31900CA3CAE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -43,37 +39,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BFECCA60C923C4A85BB520 /* Pods_SideQuest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4160F47D5FE1FCFDA46785B8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2390B796AE070ED492B0E39B /* Pods_SideQuest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BE10474A2929F31900CA3CAE = {
 			isa = PBXGroup;
 			children = (
 				BE1047552929F31900CA3CAE /* SideQuest */,
-				BE1047542929F31900CA3CAE /* Products */,
-				F9C3E90677D1D605B14D5CDD /* Pods */,
-				4160F47D5FE1FCFDA46785B8 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		BE1047542929F31900CA3CAE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BE1047532929F31900CA3CAE /* SideQuest.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BE1047552929F31900CA3CAE /* SideQuest */ = {
@@ -100,15 +76,6 @@
 				BE10476A292C19C200CA3CAE /* UIColor+RGBHex.swift */,
 			);
 			path = extensions;
-			sourceTree = "<group>";
-		};
-		F9C3E90677D1D605B14D5CDD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				90794C4EE4471169CA4AF22A /* Pods-SideQuest.debug.xcconfig */,
-				435164705434DF2FB6421D38 /* Pods-SideQuest.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +124,7 @@
 				Base,
 			);
 			mainGroup = BE10474A2929F31900CA3CAE;
-			productRefGroup = BE1047542929F31900CA3CAE /* Products */;
+			productRefGroup = BE10474A2929F31900CA3CAE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -368,7 +335,6 @@
 		};
 		BE1047682929F31B00CA3CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90794C4EE4471169CA4AF22A /* Pods-SideQuest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,7 +362,6 @@
 		};
 		BE1047692929F31B00CA3CAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 435164705434DF2FB6421D38 /* Pods-SideQuest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
