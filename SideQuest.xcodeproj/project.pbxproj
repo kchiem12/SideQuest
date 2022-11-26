@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		37BFECCA60C923C4A85BB520 /* Pods_SideQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390B796AE070ED492B0E39B /* Pods_SideQuest.framework */; };
+		A0C0A51F292C19B0006817A2 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0A51E292C19B0006817A2 /* HomePage.swift */; };
+		A0C0A524292C2D40006817A2 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0A523292C2D40006817A2 /* Job.swift */; };
+		A0C0A526292C2D91006817A2 /* JobCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0A525292C2D91006817A2 /* JobCollectionViewCell.swift */; };
+		A0C0A529292FD464006817A2 /* Posting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0A528292FD464006817A2 /* Posting.swift */; };
+		A0C0A52D29300231006817A2 /* PostingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0A52C29300231006817A2 /* PostingCollectionViewCell.swift */; };
+		A0C0A52F293085AD006817A2 /* moreInfoPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0A52E293085AD006817A2 /* moreInfoPresentViewController.swift */; };
 		BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1047562929F31900CA3CAE /* AppDelegate.swift */; };
 		BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1047582929F31900CA3CAE /* SceneDelegate.swift */; };
 		BE10475B2929F31900CA3CAE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10475A2929F31900CA3CAE /* Login.swift */; };
@@ -19,6 +25,12 @@
 		2390B796AE070ED492B0E39B /* Pods_SideQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SideQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435164705434DF2FB6421D38 /* Pods-SideQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideQuest.release.xcconfig"; path = "Target Support Files/Pods-SideQuest/Pods-SideQuest.release.xcconfig"; sourceTree = "<group>"; };
 		90794C4EE4471169CA4AF22A /* Pods-SideQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideQuest.debug.xcconfig"; path = "Target Support Files/Pods-SideQuest/Pods-SideQuest.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C0A51E292C19B0006817A2 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		A0C0A523292C2D40006817A2 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		A0C0A525292C2D91006817A2 /* JobCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0C0A528292FD464006817A2 /* Posting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posting.swift; sourceTree = "<group>"; };
+		A0C0A52C29300231006817A2 /* PostingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0C0A52E293085AD006817A2 /* moreInfoPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreInfoPresentViewController.swift; sourceTree = "<group>"; };
 		BE1047532929F31900CA3CAE /* SideQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1047562929F31900CA3CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1047582929F31900CA3CAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +83,16 @@
 			children = (
 				BE1047562929F31900CA3CAE /* AppDelegate.swift */,
 				BE1047582929F31900CA3CAE /* SceneDelegate.swift */,
+				A0C0A51E292C19B0006817A2 /* HomePage.swift */,
+				A0C0A525292C2D91006817A2 /* JobCollectionViewCell.swift */,
 				BE10475A2929F31900CA3CAE /* Login.swift */,
 				BE10475F2929F31B00CA3CAE /* Assets.xcassets */,
 				BE1047612929F31B00CA3CAE /* LaunchScreen.storyboard */,
 				BE1047642929F31B00CA3CAE /* Info.plist */,
+				A0C0A523292C2D40006817A2 /* Job.swift */,
+				A0C0A528292FD464006817A2 /* Posting.swift */,
+				A0C0A52C29300231006817A2 /* PostingCollectionViewCell.swift */,
+				A0C0A52E293085AD006817A2 /* moreInfoPresentViewController.swift */,
 			);
 			path = SideQuest;
 			sourceTree = "<group>";
@@ -85,7 +103,6 @@
 				90794C4EE4471169CA4AF22A /* Pods-SideQuest.debug.xcconfig */,
 				435164705434DF2FB6421D38 /* Pods-SideQuest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,9 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C0A526292C2D91006817A2 /* JobCollectionViewCell.swift in Sources */,
 				BE10475B2929F31900CA3CAE /* Login.swift in Sources */,
+				A0C0A529292FD464006817A2 /* Posting.swift in Sources */,
+				A0C0A52F293085AD006817A2 /* moreInfoPresentViewController.swift in Sources */,
 				BE1047572929F31900CA3CAE /* AppDelegate.swift in Sources */,
 				BE1047592929F31900CA3CAE /* SceneDelegate.swift in Sources */,
+				A0C0A52D29300231006817A2 /* PostingCollectionViewCell.swift in Sources */,
+				A0C0A51F292C19B0006817A2 /* HomePage.swift in Sources */,
+				A0C0A524292C2D40006817A2 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
